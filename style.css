@@ -1,0 +1,68 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 40%;
+}
+
+.logo-text {
+  position: absolute;
+  top: 50px;
+  left: 45px;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 2;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+
+  background: linear-gradient(
+    120deg,
+    #ffffff 0%,
+    #ffffff 40%,
+    rgba(255, 255, 255, 0.2) 50%,
+    #ffffff 60%,
+    #ffffff 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 6s linear infinite; /* pelan */
+}
+
+@keyframes shine {
+  from {
+    background-position: 200% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
