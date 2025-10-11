@@ -1,36 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-    <head>
-        <title>Luminara</title>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="utf-8">
-        <meta name="author" content="Luminara">
-        <meta name="description" content="art perfomance event">
-        <meta name="viewport" content="width=1024"> 
-    </head>
-    <body>
-    <script>src=script.js</script>
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#performance">Penampilan</a>
-        <a href="#about">Tentang</a>
-        <a href="#gallery">Galeri</a>
-        <a href="#contact">Kontak</a>
-    </div>
-    <audio autoplay loop hidden>
-        <source src="song.mp3" type="audio/mpeg">
-    </audio>
-    <video class="bg-video" autoplay muted loop playsinline>
-        <source src="video.mp4" type="video/mp4">
-        <source src="video.webm" type="video/webm">
-    </video>
-    <div class="logo-text">Luminaraa</div>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>Luminara</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+    <section class="hero" id="home">      
     <div class="overlay"></div>
-        <div class="content">
-            <h1>Coming Soon</h1>
-    <p>Website launching segera 🚀</p>
+      <header class="navbar">
+        <div class="logo-group">
+          <img src="Logo luminara.png" alt="Logo Luminara" class="logo-img" />
+          <div class="logo-text">Tremendous</div>
         </div>
-    </body>
+        <nav class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#event">Event</a>
+          <a href="#about">Tentang</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Kontak</a>
+        </nav>
+      </header>
+
+      <div class="content">
+        <h1>TREMENDOUS PRESENT</h1>
+        <p>THE LUMINARA</p>
+      </div>
+    </section>
+    <section class="event" id="event">
+      <div class="event-container">
+        <div class="event-img">
+          <img src="logo/Logo luminara.png" alt="Luminara Event" />
+        </div>
+        <div class="event-text">
+          <h2>Luminara ✨</h2>
+          <p>
+            Pentas seni angkatan 🎭<br />
+            Sebuah perayaan kreativitas, musik, dan seni dalam satu pa .<br />
+            Jangan lewatkan
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>Tentang</h2>
+      <p>Luminara adalah event seni tahunan angkatan kita.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Kontak</h2>
+      <p>Hubungi kami di email@luminara.com</p>
+    </section>
+  </body>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h2>Luminara ✨</h2>
+        <p>Pentas seni angkatan kita, merayakan kreativitas dan kebersamaan.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#event">Event</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Kontak</h3>
+        <p>
+          Email:
+          <a href="mailto:sigitardisadmaja960@gmail.com"
+            >sigitardisadmaja960@gmail.com</a
+          >
+        </p>
+        <p>
+          WA:
+          <a href="https://wa.me/6285221670276" target="_blank"
+            >0852-2167-0276</a
+          >
+        </p>
+        <p>Alamat: Pesantren Al Ihsan, Baleendah</p>
+      </div>
+      <div class="footer-social">
+        <h3>Ikuti Kami</h3>
+        <a href="https://instagram.com/tremendous" target="_blank"
+          >Instagram @tremendous</a
+        >
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Luminara. All Rights Reserved.</p>
+    </div>
+  </footer>
 </html>
-
-
